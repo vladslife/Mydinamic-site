@@ -1,0 +1,488 @@
+*{
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 500;
+}
+html,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: black;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+input{
+    padding: 10px 12px;
+    display: block;
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid #ececec;
+    line-height: 1.5rem;
+    color: #444444;
+    font-size: 1rem;
+}
+
+body {
+    background: #c0d1ee;
+    width: 100%;
+}
+/*
+Header
+ */
+header{
+    background: rgb(0, 50, 160);
+    height: 110px;
+}
+header *{
+    color: #f0f0f0;
+}
+header h1 {
+    margin-top: 25px;
+}
+
+header ul li a:hover {
+    color: rgb(59, 114, 218);
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    float: right;
+}
+
+header ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    float: right;
+}
+header ul li{
+    float: left;
+    position: relative;
+}
+
+header ul li a{
+    display: block;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px;
+}
+
+header ul li:hover ul{
+    display: block;
+}
+
+header ul li ul li {
+    width: 100%;
+}
+
+header ul li ul li a {
+    padding: 1px;
+    color: white;
+}
+
+.col-4, .col-8 {
+    display: inline-block;
+}
+
+.col-8 ul li {
+    display: inline-block;
+}
+
+header nav ul li {
+    display: inline-block;
+    top:20px;
+}
+
+header ul li a {
+    display: block;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+}
+
+header nav ul li.btn a {
+    background: rgb(3, 40, 115);
+    padding: 5px 13px;
+    border-radius: 5px;
+    transition: all 500ms ease;
+}
+
+header nav ul li.btn a:hover {
+    background: rgb(0, 50, 160);
+    color: white;
+}
+header ul li ul {
+    position: absolute;
+    top: 100px;
+    right: 14px;
+    width: 200px;
+    display: none;
+    z-index: 111;
+}
+header ul li:hover ul{
+    display: block;
+}
+header ul li ul li {
+    width: 100%;
+}
+header ul li ul li a {
+    position: absolute;
+    top: -70px;
+    right: 0px;
+    padding: 10px;
+}
+
+/*
+    SLIDER
+ */
+.slider-title{
+    text-align: center;
+    padding: 20px 0;
+}
+.carousel{
+    height: 400px;
+}
+.carousel-inner, .carousel-item{
+    height: 400px;
+    border-radius: 4px;
+}
+.carousel-caption h5{
+    font-size: 2rem;
+    font-weight: 500;
+    background: #000000;
+    max-width: 100%;
+    padding: 0.3em;
+    opacity: 0.5;
+}
+.carousel-caption {
+    position: absolute;
+    right: 0%;
+    bottom: 0.05rem;
+    left: 0%;
+    padding-top: 1.25rem;
+    padding-bottom: 0rem;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+}
+.carousel-caption h5 a{
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+}
+.carousel-caption h5 a:hover{
+    text-decoration: underline;
+}
+
+/*
+    Main
+ */
+.main-content h3{
+    margin: 20px 0;
+}
+.main-content .post{
+    margin-bottom: 20px;
+}
+.main-content .post_text{
+    padding: 8px;
+    border-radius: 3px;
+}
+.main-content .post_text h4{
+    margin: 14px 0;
+}
+.main-content .post_text h4 a:hover{
+    text-decoration: underline;
+    color: #5c5b5b;
+}
+.main-content .post_text i{
+    margin: 0px 14px 14px 0;
+}
+
+/*
+    Sidebar
+ */
+.search{
+    margin-top: 0px;
+}
+
+.sidebar .section{
+    padding: 20px;
+    border-radius: 3px;
+    margin-bottom: 30px;
+}
+.sidebar .topics ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    border-top: 1px solid #5c5b5b;
+}
+.sidebar .topics ul li a{
+    display: block;
+    padding: 15px 0px 15px 0px;
+    border-bottom: 1px solid #5c5b5b;
+    transition: all 0.3s;
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+    font-size: 1.2em;
+}
+.sidebar .topics ul li a:hover{
+    padding-left: 10px;
+    transition: all 0.3s;
+}
+
+
+/*
+    Footer
+ */
+.footer {
+    background: #303036;
+    color: white;
+    position: relative;
+}
+.footer .footer-section{
+    padding: 22px;
+}
+.footer h4, .footer h3 {
+    color: white;
+}
+.footer .about .contact span{
+    display: block;
+    font-size: 1.1em;
+    margin-bottom: 8px;
+}
+.footer .about .socials a{
+    border: 1px solid gray;
+    width: 40px;
+    height: 35px;
+    padding-top: 5px;
+    margin-right: 5px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.3em;
+    border-radius: 5px;
+    transition: all .3s;
+    color: #ffffff;
+}
+.footer .about .socials a:hover {
+    border: 1px solid white;
+    color: white;
+    transition: all .3s;
+}
+
+.footer .links ul a {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    transition: all .3s;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer .links ul a:hover {
+    color: white;
+    margin-left: 15px;
+    transition: all .3s;
+}
+
+.footer .contact-form .contact-input {
+    background: #272727;
+    color: white;
+    margin-bottom: 10px;
+    line-height: 1.3rem;
+    padding: .9rem 1.4rem;
+    border: none;
+    width: 100%;
+}
+
+.footer .contact-form .contact-input:focus {
+    background: #1a1a1a;
+}
+
+.footer .contact-form .contact-btn {
+    float: right;
+    font-size: 1.1em;
+}
+
+.footer .footer-bottom {
+    background: rgb(0, 50, 160);
+    color: white;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding-top: 20px;
+}
+
+/*
+    SINGLE_POST
+ */
+.single_post{
+    margin-bottom: 30px;
+}
+.single_post .info{
+    margin: 20px 0;
+}
+.single_post .info i{
+    display: inline-block;
+    margin-right: 20px;
+}
+.single_post a{
+    text-decoration: underline;
+}
+.single_post a:hover{
+    text-decoration: none;
+    color: #008489;
+}
+
+/*
+FORMS
+ */
+.reg_form h2 {
+    text-align: center;
+    margin: 30px 0;
+    color: white;
+}
+.reg_form a {
+    font-size: 1.2em;
+    transition: all .3s;
+    text-decoration: underline;
+    margin-left: 45px;
+}
+
+.reg_form a:hover {
+    margin-left: 40px;
+    transition: all .3s;
+}
+
+.log_form h2 {
+    text-align: center;
+    margin: 30px 0;
+    color: white;
+}
+.log_form a {
+    font-size: 1.2em;
+    transition: all .3s;
+    text-decoration: underline;
+    margin-left: 92px;
+}
+
+.log_form a:hover {
+    margin-left: 87px;
+    transition: all .3s;
+}
+
+/*
+FORMS
+ */
+form div.err p{
+    color:white;
+    font-style: italic;
+}
+
+form div button.btn.btn-secondary {
+    background: #0D6EFD;
+}
+
+
+/* для тестов
+ */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #5cb85c;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+input[type="submit"]:hover {
+    background-color: #4cae4c;
+}
+
+.question {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+thead {
+    background-color: #f2f2f2;
+}
+
+.wrap{
+    width: 500px;
+    margin: auto;
+}
